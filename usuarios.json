@@ -1,0 +1,38 @@
+[
+    {
+        "id":1,
+        "nombre":"Pedro",
+        "apellidos":"Molina Gomes",
+        "direccion":"Avn9-kd1",
+        "informacionDeContacto":10999932,
+        "TipoCliente":"nuevo",
+        "serviciosUtilizados":"Internet fibra optica",
+        "seguimiento_usuario":"",
+        "permanencia": 1
+        
+    },
+    {
+        "id":2,
+        "nombre":"Julian",
+        "apellidos":"Medrasa Gutierres",
+        "direccion":"Avn9-kd33",
+        "informacionDeContacto":10977687,
+        "TipoCliente":"regular",
+        "serviciosUtilizados":"planes pospago",
+        "seguimiento_usuario":"",
+        "permanencia": 10
+        
+    },
+    {
+        "id":3,
+        "nombre":"Maria",
+        "apellidos":"vega Gutierres",
+        "direccion":"Avn9-kdx21",
+        "informacionDeContacto":1097762333,
+        "TipoCliente":"leal",
+        "serviciosUtilizados":"planes prepago",
+        "seguimiento_usuario":"",
+        "permanencia": 13
+        
+    }
+]
