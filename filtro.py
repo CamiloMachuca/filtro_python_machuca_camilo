@@ -1,8 +1,8 @@
 import json
 def mostrarservicios():
-    with open('servicios.json','r') as openfile:
-        listaServicios=("servicios.json", openfile)
-    return listaServicios
+    with open('hola.json', encoding="utf-8") as openfile:
+        return json.load(openfile)
+    
     
 def guardarServicios(miDato):
     with open('servicios.json','w') as openfile:
@@ -10,7 +10,7 @@ def guardarServicios(miDato):
     return listaServicios
 
 
-import json
+
 def mostrarUsuarios():
     with open('usuarios.json','r')as openfile:
         listaUsuarios=('usuarios.json', openfile)
@@ -20,7 +20,8 @@ def guardarUsuarios(miDato):
     with open('usuarios.json','w')as openfile:
         listaUsuarios=('usuarios.json', miDato, openfile)
     return listaUsuarios
-    
+
+usuario = mostrarservicios()
 
 
 print("############################")
@@ -29,6 +30,12 @@ print("############################")
 print()
 buclePrincipal=True
 while buclePrincipal==True:
+    def menu(usuario):
+        for i in usuario[0]["clientes"]:
+            print(usuario)
+            print(f"{i["nombre"]}")
+        
+
     print("//////////////////////////////////////")
     print("=============MENU PRINCIPAL===========")
     print("//////////////////////////////////////")
@@ -37,6 +44,8 @@ while buclePrincipal==True:
     print("(3) salir del programa")
     opcion=input("Ingrese la opcion deseada: ")
     if opcion=="1":
+        menu(usuario)
+
         bucleUsuarios=True
         while bucleUsuarios==True:
 
